@@ -7,7 +7,7 @@
 # loyalty = type boolean
 
 # Modify the line below
-name = input('What is your name? ')
+name = str(input('What is your name? '))
 print(f"Type of name variable is: {type(name)}. It should be <class 'str'>")
 
 # Modify the line below
@@ -19,5 +19,6 @@ height = float(input('What is your height in meters? '))
 print(f"Type of height variable is: {type(height)}. It should be <class 'float'>")
 
 # Modify the line below
-loyalty = bool(input('Are you part of our loyalty program? '))
+loyalty_input = input('Are you part of our loyalty program? (yes/no) ')
+loyalty = True if loyalty_input.lower() == 'yes' else False
 print(f"Type of loyalty variable is: {type(loyalty)}. It should be <class 'bool'>")
